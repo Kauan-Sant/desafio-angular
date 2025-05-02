@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+main{
+	height: 100vh;
+}
+
+:root{
+    --medium-white: rgb(245, 240, 240);
+	--weak-white: rgba(238, 229, 229, 0.63);
+	--blue: rgb(0, 110, 255);
+	--blue-dark: darkblue;
+	--grey: grey;
+	--black: black;
+}
+
+

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 20% 60% 20%;
+
+  background-image: url('/assets/img/ranger.png');
+  background-size: auto 400px;     
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+main div{
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 3px solide;
+
+}
+
+main {
+  h1,
+  h2 {
+    width: 35%;
+    padding: 16px;
+    background-color: var(--weak-white);
+    border: 3px solid var(--grey);
+
+  }
+
+  h1 {
+    color: var(--black);
+    border-bottom: 0px;
+    font-size: 18px;
+    border-bottom: 1px solid var(--grey);
+    border-radius: 5px 5px 0px 0px;
+  
+  }
+
+  h2 {
+    color: var(--blue);
+    height: 100%;
+    border-top: 0px;
+    border-radius: 0px 0px 5px 5px;
+  }
+}
