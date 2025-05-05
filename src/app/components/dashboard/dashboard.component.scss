@@ -1,10 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Roboto:wght@100..900&display=swap');
+
+
 header {
     display: flex;
-    width: 100%;
+    padding: 1rem;
+    margin: 2.5rem;
+
     justify-content: center;
-    color: var(--blue);
+   
+    color: var(--medium-blue);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
-main div div{
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+main .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+
+    margin: 1.2rem;
     
 }
+
+
+
+
+main .infocar{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    
+
+    width: 22rem;
+    height: 15rem;
+
+    border: 0.2rem solid var(--grey) ;
+    border-radius: 0.4rem;
+}
+
+
+main .infocar h2{
+    margin: 0;
+    padding: 1.4rem;
+
+    background-color: var(--medium-white);
+    
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    
+    border-bottom: 1px solid var(--weak-grey);
+        
+}
+
+.infocar.select .select-carros{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-carros select{
+    width:80%;
+    height: 3rem;
+
+    border: 0.2rem solid var(--blue);
+    border-radius: 5px;
+}
+
+option{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+main .infocar p{
+    
+
+    color: var(--blue);
+
+    font-size: 3rem;
+    font-weight: bold;
+
+
+}
+
+main .infocar span{
+    font-size: 1.5rem;
+    padding-left: 0.4rem;
+}
+
+main .infocar section{
+    padding: 1.4rem;
+}
+
+main img{
+    width: 50%;
+}
+
+footer{
+    padding-bottom: 1.4rem;
+
+    width: 100%;
+
+    background-color: var(--medium-blue);
+}
+
+.caracts-carro {
+    display: grid;
+    grid-auto-flow: column;     
+    grid-auto-columns: auto;      
+    background-color: var(--white);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    padding-bottom: 0.5rem;
+  }
+  
+  .caract {
+    display: grid;   
+    grid-template-rows: auto auto; 
+  }
+
+  .caract  h3,
+  .caract span{
+    padding: 2rem;
+    margin-bottom: 0.1rem;
+
+    font-size: 1.5rem;
+  }
+  
+  .caract h3{
+    background-color: var(--medium-blue);
+    color: var(--white);
+
+    font-weight: 300;
+
+    border: 1px solid var(--dark-blue);
+
+  }
+
+  .caract.cod span{
+    margin: 2rem;
+    padding: 0rem;
+
+    border: 1px solid var(--black);
+    
+    text-align: center;
+    font-weight: 500;
+  } 
+
+
+  .caract span {
+    display: block;  
+
+    background-color: var(--white);
+    color: var(--black);
+    
+    font-weight: bold;
+    
+    border: 1px solid var(--blue-dark);
+  }
+  

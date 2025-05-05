@@ -1,14 +1,126 @@
-main{
-	height: 100vh;
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  header {
+    z-index: 999;
 }
 
+.mais-opcoes {
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  
+    img {   
+      width: 6rem;
+      height: 6rem;
+      transition: transform 0.2s;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 100vh;
+    position: absolute;
+
+    background-color: var(--white);
+
+    z-index: 999;
+}
+
+.opcoes img{
+    padding: 1rem;
+    width: 9rem ;
+
+}
+
+.opcoes a{
+    padding: 1rem;
+    
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    color: var(--medium-blue);
+    background-color: var(--weak-grey);
+}
+
+.opcoes a:hover{
+    border-left:3px solid var(--dark-blue) ;
+}
+
+
 :root{
+	--white: white;
     --medium-white: rgb(245, 240, 240);
 	--weak-white: rgba(238, 229, 229, 0.63);
 	--blue: rgb(0, 110, 255);
-	--blue-dark: darkblue;
+	--medium-blue: rgb(3, 3, 170);
+	--dark-blue: rgb(1, 1, 50);
 	--grey: grey;
+	--weak-grey: rgb(205, 203, 203);
 	--black: black;
 }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
