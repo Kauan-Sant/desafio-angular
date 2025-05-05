@@ -10,11 +10,11 @@ html, body {
     z-index: 999;
 }
 
-.mais-opcoes {
+.buttonopcoes {
     position: absolute;
-    background: none;
+    background: transparent;
     border: none;
-    padding: 0;
+    padding: 1rem;
     cursor: pointer;
   
     img {   
@@ -28,8 +28,19 @@ html, body {
     }
   }
 
+
+
+body.mostrar-opcoes .opcoes {
+  display: flex;
+}
+
+body.mostrar-opcoes main{
+  opacity: .40;
+}
+
+
 .opcoes{
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 30rem;
     height: 100vh;
@@ -40,7 +51,25 @@ html, body {
     z-index: 999;
 }
 
-.opcoes img{
+.buttonopcoes.exit{
+  position: relative;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+}
+
+
+
+
+
+.opcoes div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.opcoes div img{
     padding: 1rem;
     width: 9rem ;
 

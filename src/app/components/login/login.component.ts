@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+    mostraropcoes = false;
+
+    mostraropcoes_ativo () {
+      this.mostraropcoes = !this.mostraropcoes
+    }
+
+    
 
 }

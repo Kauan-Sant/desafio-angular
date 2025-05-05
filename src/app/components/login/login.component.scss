@@ -10,10 +10,12 @@
 .imagem-principal{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.imagem-principal{
-    width: 300px;
+.imagem-principal img{
+    width: 80%;
 }
 
 .interface-login{

@@ -9,11 +9,16 @@
 </head>
 <body>
   <header>    
-    <button class="mais-opcoes">
+    <button class="buttonopcoes" onclick="document.body.classList.toggle('mostrar-opcoes')">
         <img src="assets/img/svg/opcoes.svg" alt="mais-opções">
     </button>
     <div class="opcoes">
-        <img src="assets/img/png/ford.png" alt="logo-ford">
+        <div>
+          <img src="assets/img/png/ford.png" alt="logo-ford">
+          <button class="buttonopcoes exit" onclick="document.body.classList.toggle('mostrar-opcoes')">
+              <img src="assets/img/svg/exit.svg" alt="exit">
+          </button>
+        </div>
         <a href="home">Home</a>
         <a href="dashboard">Dashboard</a>
     </div>
