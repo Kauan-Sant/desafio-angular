@@ -1,0 +1,97 @@
+main{
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+main .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+
+    margin: 0.5%;
+    
+}
+
+
+
+
+main .infocar{
+
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    
+
+    width: 19rem;
+    height: 14rem;
+
+    border: 0.2rem solid var(--grey) ;
+    border-radius: 0.4rem;
+}
+
+
+main .infocar h2{
+    margin: 0;
+    padding: 1.4rem;
+
+    background-color: var(--medium-white);
+    
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    
+    border-bottom: 1px solid var(--weak-grey);
+        
+}
+
+.infocar.select .select-carros{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-carros select{
+    width:80%;
+    height: 3rem;
+
+    border: 0.2rem solid var(--blue);
+    border-radius: 5px;
+}
+
+option{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+main .infocar p{
+    
+
+    color: var(--blue);
+
+    font-size: 3rem;
+    font-weight: bold;
+
+
+}
+
+main .infocar span{
+    font-size: 1.5rem;
+    padding-left: 0.4rem;
+}
+
+main .infocar section{
+    padding: 1.4rem;
+}
+
+main img{
+    width: 50%;
+}
